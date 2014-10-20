@@ -1,0 +1,63 @@
+
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+		<!--
+						
+			//Variable declarations and assignments
+			var GradeTotal = 0; //the sum of all grades
+			var GradeCount = 0; // the count of all grades
+			var GradeStr; // the string input of the grade
+			var GradeVal; // the numeric value of a single grade input by the user
+			var SemesterAvg; // the mean of all grades input
+			var is_NaN = true; // variable to hold if the user input is not a number
+						
+			//process user inputs
+			 
+			do {
+			GradeCount ++;			
+			do { 	GradeStr = prompt("Please enter test grade number " + GradeCount + ".:\n The grade must not be less than zero.","example: 90");
+						if (GradeStr != null){
+							GradeVal = parseInt(GradeStr, 10);
+							is_NaN = isNaN(GradeVal); //checks if the value that the user input is not a number
+						}
+				}	
+			while (is_NaN == true) //if the input is invalid it promps the user again
+			
+			GradeTotal += GradeVal; 
+			}
+		while (confirm("Press OK to add a grade or click cancel to calculate your grade.")== true)
+		
+		//Calcualte semester average and round to two decimal places
+		SemesterAvg = Math.round(GradeTotal / GradeCount * 100) / 100;
+		
+		
+		//display grade output
+			if(SemesterAvg >= 90){
+				document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an A in this course </h1>");
+				} else if(SemesterAvg >= 80){	
+					document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an B in this course </h1>");
+					}	else if(SemesterAvg >= 70){
+						document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an C in this course </h1>");
+						}	else if (SemesterAvg >=60){
+							document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an D in this course </h1>");
+							} else {
+							document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an F in this course </h1>");
+							}
+	
+		-->
+		</script>
+	</head>
+		<body>
+			
+			
+			
+			
+
+			
+		</body>
+</html>
+

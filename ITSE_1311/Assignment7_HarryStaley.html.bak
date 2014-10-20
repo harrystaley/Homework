@@ -1,0 +1,33 @@
+
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+		<head>
+			<title>Assignment 5</title>
+			<script type = "text/javascript">
+ 				<!--
+ 			
+ 			var num = 0; //the number that you are going to square and cube
+ 			var i = 0; //incrementer
+ 				
+ 			document.write(
+ 				"<table width = '50%' border = '1'><tr> " +
+ 				"<th>number</th> <th>square</th> <th>cube</th>" );
+ 			
+ 			for (i = 0; i <= 10; i++) {
+ 			num = i
+ 			document.write(
+ 				"<tr><th>" + num + "</th>" + "<th>" + Math.pow(num,2) +
+ 				"</th>" + "<th>" + Math.pow(num,3) + "</th></tr>" );
+ 			}
+ 			
+ 			document.write( "</table>" );
+ 				// -->
+ 			</script>
+ 		</head>
+		<body>
+		</body>
+</html>

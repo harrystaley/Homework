@@ -1,0 +1,100 @@
+
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+		<head>
+			<script type="text/javascript">
+			<!--
+			var spaceCnt; //a counter for the number of spaces
+			var starCnt; //a counter for the number of stars
+			var lineCnt; //a counter for the max number of lines
+			var Ln //current line count
+			var St //current star
+			var Sp //current space
+			
+			document.write("<pre>");
+		
+			//exercise A
+			lineCnt = 10;
+			for (Ln = 0; Ln < 10; Ln++ ) {
+				lineCnt--
+			
+				starCnt = 10 - lineCnt; 
+				for (St = 0;St < starCnt; St++ ) {
+					document.write("*");
+				}
+			
+				spaceCnt = lineCnt;
+				for (Sp = 0;Sp <= spaceCnt;Sp++) {
+					document.write(" ");
+				}
+			
+				document.write("<br/>");
+			}
+		
+			//exercise B
+			lineCnt = 10;
+			for (Ln = 0; Ln <= 10; Ln++ ) {
+			
+				starCnt = lineCnt;
+				for (St = 0;St < starCnt; St++ ) {
+					document.write("*");
+				}
+			
+				spaceCnt = 10 - lineCnt;
+				for (Sp = 0;Sp <= spaceCnt;Sp++) {
+					document.write(" ");
+				}
+			
+				lineCnt--
+				document.write("<br/>");
+			}
+
+		
+			//exercise C
+			lineCnt = 10;
+			for (Ln = 0; Ln < 10; Ln++ ) {
+			
+				spaceCnt = 10 - lineCnt;
+				for (Sp = 0;Sp < spaceCnt;Sp++) {
+					document.write(" ");
+				}
+			
+				starCnt = lineCnt; 
+				for (St = 0;St < starCnt; St++ ) {
+					document.write("*");
+				}
+			
+				lineCnt--
+				document.write("<br/>");
+			}
+
+			//exercise D
+			lineCnt = 10;	
+			for (Ln = 0; Ln < 10; Ln++ ) {						
+				lineCnt--
+			
+				spaceCnt = lineCnt;
+				for (Sp = 0;Sp < spaceCnt;Sp++) {
+					document.write(" ");
+				}
+			
+				starCnt = 10 - lineCnt;
+				for (St = 0;St < starCnt; St++ ) {
+					document.write("*");
+				}		
+			
+				document.write("<br/>");
+			}	
+		
+		
+			document.write("</pre>");
+			-->
+			</script>
+		</head>
+		<body>
+			
+		</body>
+</html>
+

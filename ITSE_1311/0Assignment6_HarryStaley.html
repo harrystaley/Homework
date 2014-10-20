@@ -1,0 +1,58 @@
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+	<head>
+		<script type="text/javascript">
+		<!--
+						
+			//Variable declarations and assignments
+			var GradeTotal = 0; //the sum of all grades
+			var GradeCount = 0; // the count of all grades
+			var GradeStr; // the string input of the grade
+			var GradeVal; // the numeric value of a single grade input by the user
+			var SemesterAvg; // the mean of all grades input
+			
+			//prompt for grade inputs
+			while (confirm("Press OK to add a grade or click cancel to calculate your grade.")== true) 
+			{
+			GradeCount ++;			
+				do {
+					GradeStr = prompt("Please enter test grage " + GradeCount +  ".:","example: 90");
+					GradeVal = parseInt(GradeStr);
+					var is_NaN = isNaN(GradeVal)
+					}
+				while ( is_NaN = true)
+			
+			
+			GradeTotal += GradeVal; 
+		}
+		
+		//Calcualte semester average
+		SemesterAvg = GradeTotal / GradeCount;
+		
+		//display grade
+			if(SemesterAvg >= 90){
+				document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an A in this course </h1>");
+				} else if(SemesterAvg >= 80){	
+					document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an B in this course </h1>");
+					}	else if(SemesterAvg >= 70){
+						document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an C in this course </h1>");
+						}	else if (SemesterAvb >=60){
+							document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an D in this course </h1>");
+							} else {
+							document.writeln("<h1> The semester average is " + SemesterAvg + " Which gives me an F in this course </h1>");
+							}
+	
+		-->
+		</script>
+	</head>
+		<body>
+			
+			
+			
+			
+
+			
+		</body>
+</html>
+

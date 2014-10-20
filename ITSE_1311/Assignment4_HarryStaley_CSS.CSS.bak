@@ -1,0 +1,56 @@
+/* body style */
+body {
+        background:     gray;
+        margin-top:     50px;
+        margin-left:        50px;
+}
+/* button style */
+.button {
+	   /* basic styles */
+	   background: #d11717;
+	   border: 2px solid #eee;
+	   height: 40px;
+	   width: 175px;
+	   margin: 10px 0 0 50px;
+	   overflow: hidden;
+	   display: block;
+	   text-align: center;
+	   line-height: 38px;
+	   
+	   /* rounded corners */
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 10px;
+	  
+	  /*Gradient*/
+	  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	  
+	  /*Shadow*/
+	  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	  -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* button hover over style */
+.button:hover {
+    background-color: #ff3434;
+    border: 2px solid #ffff55;
+}
+/* unvisited link */
+a {
+ 	font: 18px/1.5 Helvetica, Arial, sans-serif;
+ 	color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+a:hover {
+ 	font: 18px/1.5 Helvetica, Arial, sans-serif;
+ 	color: #ffff55;
+  text-decoration: none;
+  vertical-align: top;
+}

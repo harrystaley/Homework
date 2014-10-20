@@ -1,0 +1,68 @@
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<html>
+	<head>
+		<script type="text/javascript">
+		 <!--
+         var heads = 0;
+         var tails = 0;
+					var flipResultVal;
+												
+          function toss() {
+          	var headsField = document.getElementById("heads");
+          	var tailsField = document.getElementById("tails");
+						var flipResultField = document.getElementById("flipResult");
+														
+          	if (flip()) {
+          		++heads;
+            	flipResultVal = "heads";
+            	flipResultField.value = flipResultVal;
+            	headsField.value = heads;
+          	} else {
+            	++tails;
+            	flipResultVal = "tails";
+            	flipResultField.value = flipResultVal;
+            	tailsField.value = tails;
+          	}
+          } // end function toss
+
+          function flip() {
+          	return Math.floor(Math.random() * 2) == 1
+          } // end function flip
+    -->
+		</script>
+	</head>
+		<body>
+			<form action="">
+      	<table border="1">
+        	<tr>
+          	<td>Current Flip Result</td>
+            <td>
+            	<input id="flipResult" type="text" />
+            </td>
+          </tr>
+          <tr>
+          	<td>Heads Count</td>
+            <td>
+            	<input id="heads" type="text" />
+            </td>
+          </tr>
+          <tr>
+          	<td>Tails Count</td>
+            <td>
+            	<input id="tails" type="text" />
+            </td>
+          </tr>
+          <tr>
+          	<td>
+            	<input type="button" value="Toss" onclick= "toss();" />
+            </td>
+          </tr>
+        </table>
+      </form>						
+		</body>
+</html>
+

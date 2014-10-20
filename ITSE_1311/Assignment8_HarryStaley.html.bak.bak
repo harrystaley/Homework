@@ -1,0 +1,44 @@
+
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+		<!--
+						
+			//Variable declarations and assignments
+			var RadiusStr; //the sum of all grades
+			var Radius = 0; //the numeric value of the textual input taken from the prompt
+			var is_NaN = true; //tests if the value of a numeric variable is a number						 
+						
+			//process user inputs			 				
+			do { 	RadiusStr = prompt("Please enter the radius of the circle.","example: 90");
+						if (RadiusStr != null){
+							Radius = parseFloat(RadiusStr, 10);
+							is_NaN = isNaN(Radius); //checks if the value that the user input is not a number
+						}
+				}	
+			while (is_NaN == true) //if the input is invalid it promps the user again			 			
+		
+		//calculate the area of a circle
+		function circleArea (Radius) {
+			return	Math.PI * Math.pow(Radius,2);
+		}
+		
+		//display the area of the circle			
+		document.writeln("<h1>The area of the circle is " + circleArea(Radius) + ".</h1>");	
+
+		-->
+		</script>
+	</head>
+		<body>
+			
+			
+			
+			
+
+			
+		</body>
+</html>
+

@@ -1,0 +1,113 @@
+<? xml version = "1.0"
+encoding = "utf-8" ?>
+    < !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+
+
+< html xmlns = "http://www.w3.org/1999/xhtml" >
+    < head >
+    < title > Assignment 11 < /title>
+        <script type = "text/javascript
+">
+            <!--
+            var counterArray = [9]; // intilizing an array
+            var grossSales; // initilizing the variable for input
+            var salary = 0.0;
+            var salaryCount
+            var grossSalesStr
+            var salesPersonCount
+            var is_NaN == true
+            
+            function getSalary(grossSales) // method to calculate salary, uses gross sales as arguement and returns gross sales
+            {
+                salary = ((grossSales * 0.09) + 200);
+                return salary;
+            }
+
+            function displayMessage(counterArray) // method to display the results
+            {
+                document.write(
+                    " < table width = '50%'
+border = '1' > < tr > " +
+                    " < th > Salary Range < /th> <th>Count</th > ");
+                document.write(" < th > $200 - 299 < /th> <th>"
+                    counterArray[0]
+                    "</th > ");
+                document.write(" < th > $300 - 399 < /th> <th>"
+                    counterArray[1]
+                    "</th > ");
+                document.write(" < th > $400 - 499 < /th> <th>"
+                    counterArray[2]
+                    "</th > ");
+                document.write(" < th > $500 - 599 < /th> <th>"
+                    counterArray[3]
+                    "</th > ");
+                document.write(" < th > $600 - 699 < /th> <th>"
+                    counterArray[4]
+                    "</th > ");
+                document.write(" < th > $700 - 799 < /th> <th>"
+                    counterArray[5]
+                    "</th > ");
+                document.write(" < th > $800 - 899 < /th> <th>"
+                    counterArray[6]
+                    "</th > ");
+                document.write(" < th > $900 - 999 < /th> <th>"
+                    counterArray[7]
+                    "</th > ");
+                document.write(" < th > $1000 and over < /th> <th>"
+                    counterArray[8]
+                    "</th > ");
+                document.write(" < /table>");
+            }
+
+
+
+            function increaseArray(salary, counterArray) 
+            / / method to find out which counter to increase based on salary {
+    if (salary >= 1000.00) {
+        counterArray[8]++;
+    } else if (salary >= 900.00) {
+        counterArray[7]++;
+    } else if (salary >= 800.00) {
+        counterArray[6]++;
+    } else if (salary >= 700.00) {
+        counterArray[5]++;
+    } else if (salary >= 600.00) {
+        counterArray[4]++;
+    } else if (salary >= 500.00) {
+        counterArray[3]++;
+    } else if (salary >= 400.00) {
+        counterArray[2]++;
+    } else if (salary >= 300.00) {
+        counterArray[1]++;
+    } else if (salary >= 200.00) {
+        counterArray[0]++;
+    }
+    return counterArray
+}
+
+
+while (confirm("Press OK to a salesperson or click cancel to calculate.") == true) {
+    salesPersonCount++;
+    do {
+        grossSalesStr = prompt("Please enter the gross sales of salesperson " + salesPersonCount + ".:", "example: 900");
+        salary = getSalary(grossSales); // method call with grossSales as arguement, should return the salary
+        increaseArray(salary, counterArray); //method call with salary as arguement
+
+        grossSales = parseInt(grossSalesStr);
+        var is_NaN = isNaN(grossSales)
+    }
+    while (is_NaN = true)
+}
+
+
+
+displayMessage(counterArray);
+
+
+// -->
+< /script>
+    </head >
+    < body >
+    < /body>
+</html >

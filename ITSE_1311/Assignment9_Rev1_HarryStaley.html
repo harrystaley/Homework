@@ -1,0 +1,48 @@
+
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+		<!--
+						
+			//Variable declarations and assignments
+			var RadiusStr; //the sum of all grades
+			var Radius = 0; //the numeric value of the textual input taken from the prompt
+			var is_NaN = true; //tests if the value of a numeric variable is a number						 
+						
+			//process user inputs			 				
+			function getRadius()
+			{
+					RadiusStr = document.getElementById("rad").value;
+					if (RadiusStr != null){
+						Radius = document.getElementById("rad").value;
+						is_NaN = isNaN(Radius); //checks if the value that the user input is not a number
+					}
+					if (is_NaN == true) { //if the input is invalid it promps the user to input a number
+						document.getElementById("output").innerHTML = "The radius must be a number.";
+					}
+					else { //display the area of the circle
+						document.getElementById("output").innerHTML = "The area of the circle rounded to the nearest thousandth is " + Math.round(circleArea(Radius) * 1000) / 1000 + ".";
+					}		 			
+			}
+		//calculate the area of a circle
+		function circleArea (Radius) {
+			return	Math.PI * Math.pow(Radius,2);
+		}
+		
+		-->
+		</script>
+	</head>
+		<body>
+			
+			<p>Please input the radius of the circle</p>
+			<input type="text" id="rad" name="radius"/><br>
+			<input name="submit" onclick="getRadius()" type="submit" value="Submit"/>
+			<p id="output"></p>
+
+
+		</body>
+</html>
+
