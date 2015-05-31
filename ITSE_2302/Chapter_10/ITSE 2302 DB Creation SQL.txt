@@ -1,0 +1,23 @@
+CREATE TABLE store_info (storeID VARCHAR(10) PRIMARY KEY,  
+name VARCHAR(50), description VARCHAR(200), welcome TEXT,
+css_file VARCHAR(250), email_address 
+VARCHAR(100));
+ 
+LOAD DATA INFILE 'C:/XAMPP/htdocs/Chapter 10 Files/store_info.txt'
+INTO TABLE store_info;
+
+CREATE TABLE inventory (storeID 
+varchar(10),
+productID VARCHAR(10) PRIMARY KEY,
+name VARCHAR(100), description VARCHAR(200), 
+price FLOAT);
+
+LOAD DATA INFILE 'C:/XAMPP/htdocs/Chapter 10 Files/inventory.txt'
+INTO TABLE inventory;
+
+CREATE TABLE orders (
+productID VARCHAR(10),
+orderID VARCHAR(32), 
+quantity INT);
+ 
+

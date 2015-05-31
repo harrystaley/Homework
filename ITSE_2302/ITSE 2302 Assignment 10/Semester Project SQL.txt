@@ -1,0 +1,42 @@
+GRANT ALL PRIVILEGES ON fredbiz.* 
+TO 'Fred'@'localhost'
+IDENTIFIED BY 'Farmer#Fred.';
+
+CREATE TABLE Halloween (
+id INT,
+qty INT, 
+description VARCHAR(20), 
+weight INT);
+
+INSERT INTO Halloween (
+id,
+qty, 
+description, 
+weight)
+
+VALUES
+(1, 20, 'pumpkin', 10),
+(2, 43, 'mixed nuts', 2),
+(3, 25, 'pumpkin', 15),
+(4, 87, 'bag carrots', 1), 
+(5, 9, 'pumpkin', 20),
+(6, 52, 'mixed nuts', 1),
+(7, 68, 'bag carrots', 2),
+(8, 5, 'pumpkin', 25);
+
+INSERT INTO users (
+id,
+username, 
+password)
+
+VALUES
+(1, ‘batman’, ‘batman123’),
+(2, ‘jdoe’, ’jdoe123’);
+
+INSERT INTO `users` 
+(`id`, `username`, `password`) 
+VALUES 
+('1', 'batman', 'batman123'),
+('2', 'jdoe', 'jdoe123');
+
+mysqldump ---user root ---password= fredbiz > ITSE_2302_HS_Project.txt

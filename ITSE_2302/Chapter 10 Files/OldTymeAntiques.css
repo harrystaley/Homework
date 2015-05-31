@@ -1,0 +1,39 @@
+body {
+     color:#403010; 
+     font-family:"Lucida Calligraphy", "Brush Script MT", "English 157 BT", cursive; 
+     background-color:#FFF0D0;
+     font-style:italic; 
+}
+
+p {
+     margin-left:20px;
+}
+
+h1, h2, th, td {
+     color:#403010;
+}
+
+h1, h2, th {
+     text-align:center; 
+     font-weight:bold; 
+}
+
+table, th, td {
+     border-style:none;
+}
+
+table {
+     padding:10px; 
+     margin:10px; 
+     vertical-align:top;
+}
+
+td {
+     vertical-align:top;
+}
+
+.currency {
+    text-align:right;
+    font-family:monotype;
+    font-style:normal; 
+}

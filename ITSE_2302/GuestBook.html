@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Guest Book</title>
+        <meta http-equiv="Content-Type"
+          content="text/html; charset=iso-8859-1" />
+    </head>
+    <body>
+        <table>
+           <tr>
+            </tr>
+            <tr>
+                <td><h1>Please Sign Into Our Guestbook</h1></td>
+            </tr>
+            <tr>
+                <p><a href ="ShowGuestBook.php">Show Guest Book </a></p>
+                <p><a href ="AlphaGuestBook.php">Alphabatize Guest Bok </a></p>
+            </tr>
+        </table>
+        <hr />
+	
+	   <form method="post" action="SignGuestBook.php">
+	       <p>Name:
+                <input type="text" size="40" maxlength="40" name="Name" is="Name" required>
+           </p>
+           <p>Email:
+	           <input type="Email"  name="Email" id="Email"  required />
+	       </p>
+            <p>
+                <input type="reset" value="Reset Form" />
+                <input type="submit" value="Submit" />
+            </p>
+	   </form>
+    </body>
+</html>

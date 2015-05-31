@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Interview Entry</title>
+        <meta http-equiv="Content-Type"
+          content="text/html; charset=iso-8859-1" />
+    </head>
+    <body>
+        <table>
+           <tr>
+            </tr>
+            <tr>
+                <td><h1>Interview Entry</h1></td>
+            </tr>
+            <tr>
+                <p><a href ="Interview_CreateDB.php">Create Interview Database</a></p>
+                <p><a href ="Interview_Show.php">Show Interview Info</a></p>
+            </tr>
+        </table>
+        <hr />
+	
+	   <form method="post" action="Interview_Submit.php">
+	       <p>
+                <input type="reset" value="Reset Form" />
+                <input type="submit" value="Submit" />
+            </p>
+           <p>Interviewer's Name <br>
+                <input type="text" size="40" maxlength="40" name="i_Name" id="i_Name" required />
+           </p>
+           <p>Interviewer's Position <br>
+	           <input type="text" size="40" maxlength="40" name="i_Position" id="i_Position"  required />
+	       </p>
+            <p>Interview Date <br>
+	           <input type="date" value="1900-12-01"  name="i_Date" id="i_Date"  required />
+	       </p>
+           <p>Candidates' Name <br>
+	           <input type="text" size="40" maxlength="40"  name="c_Name" id="c_Name"  required />
+	       </p>
+           <p>Candididate's Communication Abilities <br>
+	           <textarea cols="40" rows="5" maxlength="2000" name="c_CommAbil"  required></textarea>
+	       </p>
+           <p>Candididate's Professional Appearance <br>
+	           <textarea cols="40" rows="5" maxlength="2000" name="c_ProfApp"  required></textarea>
+	       </p>
+           <p>Candididate's Computer Skills <br>
+	           <textarea cols="40" rows="5" maxlength="2000" name="c_CompSkill"  required></textarea>
+	       </p>
+           <p>Candididate's Business Knowledge <br>
+	           <textarea cols="40" rows="5" maxlength="2000" name="c_BusKnow"  required></textarea>
+	       </p>
+           <p>Interviewer's Comments <br>
+	           <textarea cols="40" rows="5" maxlength="2000" name="i_Comments"  required></textarea>
+	       </p> 
+           <p>
+                <input type="reset" value="Reset Form" />
+                <input type="submit" value="Submit" />
+            </p>
+	   </form>
+    </body>
+</html>
